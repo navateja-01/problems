@@ -1,0 +1,39 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int i,z,a;
+	
+	
+	for(i=0;i<1000;i++)
+	{
+	
+		int g=i;
+	int j=i;
+	int f=i;
+	int k=0;
+	int l=0;
+	
+		while(g!=0)
+		{
+			z=g%10;
+			k++;
+			g=g/10;
+		}
+		while(f!=0)
+		{
+			a=f%10;
+			l=l+(pow(a,k));
+			f=f/10;
+		}
+		
+		
+	  
+	if(l==j)
+	{
+		cout<<l<<"is armstrong"<<endl;
+	}
+
+}
+}
